@@ -1,0 +1,65 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar styling */
+nav {
+  position: fixed; /* Always stays on top */
+  top: 0;
+  width: 100%;
+  background: #333;
+  padding: 10px 0;
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: color 0.3s, background 0.3s;
+}
+
+/* Hover effect */
+.nav-list a:hover {
+  background: white;
+  color: #333;
+  border-radius: 5px;
+}
+
+/* Section styling for demo */
+.section {
+  padding: 100px 20px;
+  margin-top: 60px; /* Space for fixed navbar */
+  min-height: 100vh;
+}
+
+#home { background: #f4f4f4; }
+#about { background: #ddd; }
+#services { background: #bbb; }
+#contact { background: #999; }
+
+/* Style when scrolled */
+nav.scrolled {
+  background: #555; /* Change background when scroll */
+}
