@@ -12,5 +12,6 @@ Features:
 
 📌 Smooth hover effects on nav links
 
-📌Fully responsive layout that works on all device.
+📌Fully responsive layout that works on all device
+
 
